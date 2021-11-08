@@ -1,43 +1,20 @@
 console.log("This is a code quiz")
 var startbtn = document.querySelector(".startbtn").addEventListener("click", function() {
-    
+    countdown();
 })
 
+var timer = document.querySelector(".startbtn");
+var secondsleft = 5;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var timer = document.querySelector("#timer");
-// var secondsleft = 30;
-
-// function countdown() {
-// var timerinterval = setInterval(function() {
-//     secondsleft--;
-//     timer.textContent = "Timer: " + secondsleft;
+function countdown() {
+var timerinterval = setInterval(function() {
+    secondsleft--;
+    timer.textContent = "Timer: " + secondsleft;
     
-//     if(secondsleft === 0) {
-//         clearInterval(timerinterval);
-//         sendmessage();
-//     }
+    if(secondsleft === 0) {
+        clearInterval(timerinterval);
+        
+    }
     
-// }, 1000);
-// }
-
-// function sendmessage() {
-//     timer.textContent = "You lose"
-// }
-
-
-// countdown ();
+}, 1000);
+}
