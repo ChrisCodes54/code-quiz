@@ -4,17 +4,34 @@ var startbtn = document.querySelector(".startbtn").addEventListener("click", fun
     hidestarttext();
 
 })
-
-
 var timer = document.querySelector(".timernav");
 var secondsleft = 5;
-var starttext = document.getElementById("start-text")
+var starttext = document.getElementById("start-text");
+var shownextbtn = document.getElementsByClassName ("nextbtn");
+var showquiz = document.getElementsByClassName ("quiz")
 
-function showtime () {
+//myquestions[0].question //accesing the first object of my questions, and then grabbing the question
 
-}
+var myquestions = [ 
+    {
+        question: "Who in the premier league has gotten the entire season unbeaten?",
+        options: ['Manchester City', 'Manchester United', 'Chelsea', 'Arsenal'],
+        correctAnswer: 'Arsenal'
+    },
 
+    {
+        question: "Who has won the most World Cups?",
+        options: ['France','Brazil','Germany','Italy'],
+        correctAnswer: 'Arsenal'
+    },
 
+    {
+        question: "Who has played for Barcelona and Real Madrid?",
+        options: ['Messi','Ronaldo','Figo','Pique'],
+        correctAnswer: 'Figo'
+
+    }
+]
 function countdown() {
 var timerinterval = setInterval(function() {
     secondsleft--;
@@ -37,3 +54,12 @@ function hidestarttext () {
         hidestarttext.style.display = "none";
     }
 }
+
+function showquiz () {
+    var 
+}
+
+// function shownextbtn () {
+//     document.getElementsByClassName("nextbtn").style.display = 'block';
+//     e.preventDefault();
+// }
