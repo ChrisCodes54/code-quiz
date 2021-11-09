@@ -2,11 +2,20 @@ body {
     background-color: aqua;
 }
 
+
 .title-text {
     font-size: 40px;
     font-weight:900;
     display: flex;
     justify-content: center;
+}
+
+.timernav {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 50px;
+    padding-right: 20px;
 }
 
 #start-text {
