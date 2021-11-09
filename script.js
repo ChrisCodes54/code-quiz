@@ -3,8 +3,14 @@ var startbtn = document.querySelector(".startbtn").addEventListener("click", fun
     countdown();
 })
 
+
 var timer = document.querySelector(".startbtn");
 var secondsleft = 5;
+
+function showtime () {
+
+}
+
 
 function countdown() {
 var timerinterval = setInterval(function() {
