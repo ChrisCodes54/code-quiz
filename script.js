@@ -1,5 +1,7 @@
 console.log("This is a code quiz")
-var startbtn = document.querySelector(".startbtn").addEventListener("click", function() {
+var startbtn = document.querySelector(".startbtn")
+
+startbtn.addEventListener("click", function() {
     countdown();
     hidestarttext();
     loadquestions();
@@ -78,6 +80,8 @@ function hidestarttext () {
         hidestarttext.style.display = "none";
     }
 }
+
+
 
 // function buildquiz () {
     
