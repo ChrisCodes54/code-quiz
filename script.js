@@ -23,24 +23,46 @@ var endQuizDiv = document.getElementById("endQuiz");
 
 var myquestions = [
     {
-      question:
-        "Who in the premier league has gotten the entire season unbeaten?",
-      options: ["Manchester City", "Manchester United", "Chelsea", "Arsenal"],
-      correctAnswer: "Arsenal",
+    question:"Who in the premier league has gotten the entire season unbeaten?",
+    options: ["Manchester City", "Manchester United", "Chelsea", "Arsenal"],
+    correctAnswer: "Arsenal",
     },
 
     {
-      question: "Who has won the most World Cups?",
-      options: ["France", "Brazil", "Germany", "Italy"],
-      correctAnswer: "Arsenal",
+    question: "Who has won the most World Cups?",
+    options: ["France", "Brazil", "Germany", "Italy"],
+    correctAnswer: "Brazil",
     },
 
     {
-      question: "Who has played for Barcelona and Real Madrid?",
-      options: ["Messi", "Ronaldo", "Figo", "Pique"],
-      correctAnswer: "Figo",
+    question: "Who has played for Barcelona and Real Madrid?",
+    options: ["Messi", "Ronaldo", "Figo", "Pique"],
+    correctAnswer: "Figo",
     },
-  ];
+
+    {
+    question: "What team won the 2018 World Cup?",
+    options: ["Brazil", "Germany", "France", "Italy"],
+    correctAnswer: "France",
+    },
+
+    {
+    question: "What year did Arsene Wenger become manager of Arsenal?",
+    options: ["1994", "1996", "1999", "2001"],
+    correctAnswer: "1996",
+    },
+    {
+    question: "What season did Arsenal achieve their invincible status?",
+    options: ["2001/2002", "2003/2004", "2004/2005", "1999/2000"],
+    correctAnswer: "2003/2004",
+    },
+    {
+    question: "Which is the bigger club?",
+    options: ["Manchester City", "Arsenal", "Brighton", "Fulham"],
+    correctAnswer: "Arsenal",
+    },
+
+];
 //myquestions[0].question //accesing the first object of my questions, and then grabbing the question
 
 function loadquestions() {
@@ -78,6 +100,8 @@ function handleClick(){
             secondsleft = 0;
         }
 
+        quizq.setAttribute("class", "hide")
+
         timer.textContent = secondsleft;
 
         feedbackDiv.textContent = "Wrong!";
@@ -98,6 +122,7 @@ function handleClick(){
         loadquestions();
     }
     correct++;
+
     console.log("Correct",correct);
 }
 
@@ -109,6 +134,7 @@ function countdown() {
 
     if (secondsleft === 0) {
       clearInterval(timerinterval);
+      
     }
   }, 1000);
 }
