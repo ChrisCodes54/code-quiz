@@ -2,7 +2,7 @@ console.log("This is a code quiz")
 var startbtn = document.querySelector(".startbtn").addEventListener("click", function() {
     countdown();
     hidestarttext();
-    loadquestion();
+    loadquestions();
 
 })
 var timer = document.querySelector(".timernav");
@@ -15,9 +15,20 @@ var quizq = document.getElementById("questions")
 
 //myquestions[0].question //accesing the first object of my questions, and then grabbing the question
 
-function loadquestion () {
-    var first = myquestions[0].question;
-    console.log(first)
+function loadquestions () {
+    var firstq = myquestions[0].question;
+    console.log(firstq);
+    var firsto = myquestions[0].options;
+    console.log(firsto);
+    var firsta = myquestions[0].correctAnswer;
+    console.log(firsta);
+
+    if(startbtn.style.display === "none"){
+        startbtn.style.display = "block";
+    } else {
+    startbtn.style.display = "none";
+    }
+
 }
 
 
