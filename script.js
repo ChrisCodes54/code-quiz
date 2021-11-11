@@ -93,6 +93,8 @@ function loadquestions() {
 
 function handleClick(){
 
+    
+
     if(this.value !== myquestions[currentQuestionIndex].correctAnswer){
         secondsleft -= 10;
 
