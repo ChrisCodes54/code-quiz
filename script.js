@@ -98,6 +98,7 @@ function handleClick(){
 
         if(secondsleft < 0){
             secondsleft = 0;
+            
         }
 
         quizq.setAttribute("class", "hide")
@@ -112,7 +113,8 @@ function handleClick(){
     feedbackDiv.setAttribute("class", "feedback")
     setTimeout(function(){
         feedbackDiv.setAttribute("class", "feedback hide")
-    }, 2000);
+        
+    }, 3000);
 
     currentQuestionIndex++;
 
